@@ -1,3 +1,3 @@
-# terraform-google-redirect
+# terraform-google-domain-redirect
 
-Terraform module to simplify redirecting domains on Google Cloud DNS.
+Terraform module to simplify domain redirect on Google Cloud DNS.
