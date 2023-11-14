@@ -19,3 +19,9 @@ variable "strip_query" {
   type        = bool
   default     = false
 }
+
+variable "redirect_response_code" {
+  description = "HTTP status code to use for the redirect"
+  type        = string
+  default     = "MOVED_PERMANENTLY_DEFAULT"
+}

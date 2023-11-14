@@ -30,9 +30,10 @@ resource "google_compute_url_map" "http_url_map" {
   name = "${local.safe_hostname}-to-http-url-map"
 
   default_url_redirect {
-    host_redirect  = var.host_redirect
-    https_redirect = var.https_redirect
-    strip_query    = var.strip_query
+    host_redirect          = var.host_redirect
+    https_redirect         = var.https_redirect
+    strip_query            = var.strip_query
+    redirect_response_code = var.redirect_response_code
   }
 }
 
