@@ -32,6 +32,7 @@ resource "google_compute_url_map" "http_url_map" {
   default_url_redirect {
     host_redirect          = var.host_redirect
     https_redirect         = var.https_redirect
+    path_redirect          = var.path_redirect
     strip_query            = var.strip_query
     redirect_response_code = var.redirect_response_code
   }
