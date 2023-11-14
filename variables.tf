@@ -14,8 +14,20 @@ variable "https_redirect" {
   default     = true
 }
 
+variable "path_redirect" {
+  description = "The target path to redirect"
+  type        = string
+  default     = ""
+}
+
 variable "strip_query" {
   description = "Strip URL query parameters"
   type        = bool
   default     = false
+}
+
+variable "redirect_response_code" {
+  description = "HTTP status code to use for the redirect"
+  type        = string
+  default     = "MOVED_PERMANENTLY_DEFAULT"
 }
