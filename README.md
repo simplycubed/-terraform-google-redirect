@@ -42,6 +42,7 @@ module "www_example" {
 | hostname       | The name of the website and the Cloud Storage bucket to create (e.g. static.foo.com). | string |
 | host_redirect  | The name of the target domain to redirect | string |
 | https_redirect | Issue TLS certificate and enable HTTPS | bool |
+| path_redirect  | The target path to redirect | string |
 | strip_query    | Strip URL query parameters | bool |
 | redirect_response_code | HTTP status code to use for the redirect | [string](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_url_map#redirect_response_code) |
 
